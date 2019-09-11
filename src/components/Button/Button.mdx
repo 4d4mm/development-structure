@@ -1,0 +1,22 @@
+# Button
+
+The button extends creates map between our application and the framework we use 
+in this case Material UI. Therefore, references to the external framework can 
+only occure in this folder (components). Notice that this is still an abstract 
+component. Please see the contrast between the MenuButton component which is an 
+exact implementation which we has a specific place on the UI. The MenuButon 
+configures the generic/abstract button component. 
+
+
+In sort on this level of abstraction:
+- the basic components from external framework will be finetuned to the project's need.
+- style options will be reduced to the use-cases occuring in te project.
+
+Therefore if the developers decide to use a different UI framework or just to lean down 
+the implementation only one part of the application has to be touched. Also, in case of 
+this change for the custom functionality the already implemented test cases will not be 
+lost, ergo less aspects of the codebase to test write new tests.
+
+
+
+##  
