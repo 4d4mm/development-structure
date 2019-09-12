@@ -1,14 +1,20 @@
 import React from "react";
-import HorizontalSplitLayout from "../../components/HorizontalSplitLayout/HorizontalSplitLayout";
-import SideMenu from "../../components/SideMenu/SideMenu";
-import MenuButton from "../../components/MenuButton/MenuButton";
+import HorizontalSplitLayout from "../../components/core/HorizontalSplitLayout/HorizontalSplitLayout";
+import SideMenu from "../../components/bss/SideMenu/SideMenu";
+import MenuButton from "../../components/bss/MenuButton/MenuButton";
+import Form from "../../components/core/Form/Form";
+import demoForm from "../../schemas/demoForm.json";
 
 const MainScreen = () => (
   <HorizontalSplitLayout>
     <SideMenu>
-      <MenuButton>Test</MenuButton>
-      <MenuButton>Test 2</MenuButton>
+      <MenuButton>Subscriptions</MenuButton>
+      <MenuButton>Plans</MenuButton>
+      <MenuButton>Usage</MenuButton>
+      <MenuButton>Company</MenuButton>
+      <MenuButton>Users</MenuButton>
     </SideMenu>
+    <Form schema={demoForm} data={{}} />
   </HorizontalSplitLayout>
 );
 

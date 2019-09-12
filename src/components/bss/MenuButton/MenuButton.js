@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Button from "../Button/Button";
+import Button from "../../core/Button/Button";
 
 const MenuButton = ({ children }) => {
   return <Button textAlign="left">{children}</Button>;
